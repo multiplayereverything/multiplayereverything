@@ -7,7 +7,7 @@ type it in and join. No IP addresses, no port forwarding.
 
 - Website and game list: https://multiplayereverything.com
 - Download the launcher: https://github.com/multiplayereverything/multiplayer-mods-launcher/releases/latest
-- Discord: https://discord.com/invite/P2MSSUf5GX
+- Discord: https://discord.com/invite/jnnyz2vqB5
 
 ## Suggest a game
 
