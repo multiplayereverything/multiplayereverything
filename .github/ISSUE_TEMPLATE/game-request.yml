@@ -1,0 +1,52 @@
+name: Suggest a game
+description: A Flash game you want to play online with friends.
+title: "[Game] "
+labels: ["game request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please [search the suggestions](https://github.com/multiplayereverything/multiplayereverything/issues?q=is%3Aissue+sort%3Areactions-%2B1-desc) first. If the game is already there, give it a thumbs-up instead.
+  - type: input
+    id: game
+    attributes:
+      label: Game name
+      placeholder: Fireboy and Watergirl
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where can it be played?
+      description: A link to the game on Flashpoint, Newgrounds, Kongregate or another site.
+      placeholder: https://www.newgrounds.com/portal/view/...
+    validations:
+      required: false
+  - type: dropdown
+    id: players
+    attributes:
+      label: How many people should play together?
+      options:
+        - "2"
+        - "3"
+        - "4"
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: How should it be played?
+      options:
+        - Together, on the same team (co-op)
+        - Against each other (versus)
+        - Either
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this game?
+      description: What would be fun about it online? Does it already have a local two-player mode?
+    validations:
+      required: false

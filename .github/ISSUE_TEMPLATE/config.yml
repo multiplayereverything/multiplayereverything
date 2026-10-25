@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Launcher bug
+    url: https://github.com/multiplayereverything/multiplayer-mods-launcher/issues
+    about: Something broken in the launcher or a game? Report it on the launcher repo.
+  - name: Discord
+    url: https://discord.com/invite/P2MSSUf5GX
+    about: Questions, finding people to play with, or just chatting.
