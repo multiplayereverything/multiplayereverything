@@ -1,8 +1,9 @@
 # Multiplayer Everything
 
-We write online multiplayer mods for classic Flash games. One player hosts a
-room and gets a five-letter code, friends type it in and join. No IP
-addresses, no port forwarding.
+We write online multiplayer mods for games that never had it: classic Flash
+games, and PC games made for one player, like Spooky's Jump Scare Mansion.
+In most of them one player hosts a room and gets a five-letter code, friends
+type it in and join. No IP addresses, no port forwarding.
 
 - Website and game list: https://multiplayereverything.com
 - Download the launcher: https://github.com/multiplayereverything/multiplayer-mods-launcher/releases/latest
@@ -29,7 +30,7 @@ is how we look at the list when picking what to work on next.
 
 | Label | Meaning |
 | --- | --- |
-| `game request` | A Flash game someone wants online |
+| `game request` | A game someone wants to play online |
 | `idea` | An idea for the launcher or the website |
 | `planned` | We want to do it; not started yet |
 | `in progress` | Someone is building it |
