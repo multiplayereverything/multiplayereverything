@@ -1,0 +1,82 @@
+name: Submit a co-op project
+description: A co-op or multiplayer mod, fork or port for a Flash or PC game that you made or found. We read every one and add the good ones to the site.
+title: "[Project] "
+labels: ["coop project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! We list co-op and multiplayer projects on [multiplayereverything.com](https://multiplayereverything.com) and link to their GitHub page. Please [search the existing ones](https://github.com/multiplayereverything/multiplayereverything/issues?q=is%3Aissue+label%3A%22coop+project%22) first.
+
+        Want to build one? [How to make a co-op mod](https://multiplayereverything.com/make/).
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: Baldi's Basics Plus
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of game is it?
+      options:
+        - A PC game (Steam, GOG, Epic or a file)
+        - A Flash game
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Project link
+      description: The project's GitHub page, or wherever its code and downloads are.
+      placeholder: https://github.com/you/your-coop-mod
+    validations:
+      required: true
+  - type: dropdown
+    id: mine
+    attributes:
+      label: Is it yours?
+      options:
+        - Yes, I made it or I am working on it
+        - No, I found it
+    validations:
+      required: true
+  - type: dropdown
+    id: players
+    attributes:
+      label: How many people can play together?
+      options:
+        - "2"
+        - "3"
+        - "4"
+        - More than 4
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What is actually shared between players?
+      description: Seeing each other, story and quests, enemies, the world, items. Say what you have seen working, not what the page promises.
+    validations:
+      required: false
+  - type: dropdown
+    id: played
+    attributes:
+      label: Have you played it with friends?
+      options:
+        - "No"
+        - Yes, a little
+        - Yes, a whole playthrough
+        - I ran automated tests
+    validations:
+      required: true
+  - type: input
+    id: discord
+    attributes:
+      label: Discord name (optional)
+      description: So we can reach you. Join us on [Discord](https://discord.com/invite/jnnyz2vqB5) if you have not yet.
+    validations:
+      required: false
