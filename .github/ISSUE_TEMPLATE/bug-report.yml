@@ -1,0 +1,82 @@
+name: Report a bug
+description: Something is broken in a game or in the launcher.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. Please [search the open bugs](https://github.com/multiplayereverything/multiplayereverything/issues?q=is%3Aissue+is%3Aopen+label%3Abug) first. If yours is there, add a thumbs-up and any detail we are missing as a comment.
+  - type: input
+    id: game
+    attributes:
+      label: Which game?
+      placeholder: Gun Mayhem 2
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - It won't start
+        - I can't host or join a room
+        - Lag or disconnects
+        - It crashes or freezes
+        - Controls or input
+        - Graphics or sound
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Were you hosting or joining?
+      options:
+        - Hosting
+        - Joining
+        - Playing on my own
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen again?
+      description: The steps you took, in order.
+      placeholder: |
+        1. Press Play online
+        2. Host a room
+        3. A friend joins, then ...
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Launcher version
+      description: The number of the release you downloaded.
+      placeholder: "1.2.1"
+    validations:
+      required: false
+  - type: input
+    id: room
+    attributes:
+      label: Room code
+      description: If it happened in a room. It helps us find it in the logs.
+      placeholder: KQWJT
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Drag in a screenshot or a short clip if you have one.
+    validations:
+      required: false

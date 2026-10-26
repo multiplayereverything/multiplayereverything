@@ -32,6 +32,7 @@ is how we look at the list when picking what to work on next.
 | --- | --- |
 | `game request` | A game someone wants to play online |
 | `idea` | An idea for the launcher or the website |
+| `bug` | Something is broken in a game or in the launcher |
 | `planned` | We want to do it; not started yet |
 | `in progress` | Someone is building it |
 | `added` | Done. Games show up in the launcher and on the website |
@@ -40,6 +41,11 @@ is how we look at the list when picking what to work on next.
 
 ## Found a bug?
 
-Launcher bugs go in the
-[launcher's issues](https://github.com/multiplayereverything/multiplayer-mods-launcher/issues),
-or ask on Discord.
+[Open the bug form](https://github.com/multiplayereverything/multiplayereverything/issues/new?template=bug-report.yml).
+Tell us the game, what kind of problem it is, and whether you were hosting or
+joining. The game pages on https://multiplayereverything.com have a
+**Report a bug** button that fills in the game for you.
+
+Search the [open bugs](https://github.com/multiplayereverything/multiplayereverything/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+first; if yours is there, add a thumbs-up and any detail we are missing.
+For a quick question, ask on Discord.
